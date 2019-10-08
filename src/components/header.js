@@ -35,7 +35,7 @@ return (
 
         <ul className="uk-navbar-nav">
         <li><p className="uk-text-lead">{data.site.siteMetadata.description}</p></li>
-        <li><p className="uk-text-lead"><img src={`/${data.contentfulAsset.file.url}`} /></p></li>
+        <li><p className="uk-text-lead"><img src={`/${data.contentfulAsset.title}`} /></p></li>
         <li className="uk-active"><Link to="/">Home</Link></li>
         <li><Link to="/blogposts">Article</Link>
                 <div className="uk-navbar-dropdown">
