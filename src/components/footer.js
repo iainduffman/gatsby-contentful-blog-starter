@@ -2,13 +2,14 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
+import "./footer.css"
 
 
 export default () => (
 
-<div class="footer uk-section uk-section-primary tm-section-primary uk-section-xlarge uk-padding-remove-bottom uk-padding-remove-top" styles="background: #323232;">
-    <div class="uk-container uk-text-center">
-        <div class="uk-margin-top uk-margin-bottom">
+<div className="footer uk-section uk-section-primary tm-section-primary uk-section-xlarge uk-padding-remove-bottom uk-padding-remove-top" styles="background: #323232;">
+    <div className="uk-container uk-text-center">
+        <div className="uk-margin-top uk-margin-bottom">
             <div data-uk-grid="" className="uk-child-width-auto@m uk-flex-middle uk-grid uk-grid-stack">
                 <div className="uk-first-column uk-hidden">
                     <ul className="uk-navbar-nav uk-navbar-nav footer-left uk-visible@l">

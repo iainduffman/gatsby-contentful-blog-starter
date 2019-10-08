@@ -12,8 +12,7 @@ import { Helmet } from "react-helmet"
 
 import Header from "./header"
 import Footer from "./footer"
-import "./layout.css"
-import "./ui-custom.css"
+import "./structure.css"
 
 const Layout = ({ children }) => {
   
@@ -42,9 +41,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>
-        <div className="uk-container uk-padding-large uk-padding-remove-left uk-padding-remove-right uk-padding-remove-top">
         {children}
-        </div>
         </main>
         <footer>
         <Footer />

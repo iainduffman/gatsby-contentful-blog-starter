@@ -29,11 +29,10 @@ return (
     }}
   >
 
-  <nav className="uk-navbar-container uk-container" data-uk-navbar>
-
+  <nav className="uk-container" data-uk-navbar>
     <div className="uk-navbar-left">
         <ul className="uk-navbar-nav">
-        <li><Link to="/"><img width="184" height="37" src={`/${data.contentfulAsset.file.url}`} /></Link></li>
+        <li><Link to="/"><img id="logo" width="184" height="37" src={`/${data.contentfulAsset.file.url}`} /></Link></li>
         </ul>
     </div>
 

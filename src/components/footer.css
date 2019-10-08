@@ -1,0 +1,8 @@
+.footer {
+    background: #323232 !important;
+}
+
+.footer-nav ul li {
+    text-align: left;
+    list-style-type: none;
+}
