@@ -12,7 +12,7 @@ const Header = () => {
         description
       }
     }
-    contentfulAsset(title: {eq: "Logo"}) {
+    contentfulAsset(id: {eq: "26dca1aa-2468-54e9-acc9-a8a16adb347d"}) {
       title
       file {
         fileName
