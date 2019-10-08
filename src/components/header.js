@@ -26,7 +26,6 @@ return (
 
   <header style={{
       background: `#fff`,
-      marginBottom: `1.35rem`,
     }}
   >
 
