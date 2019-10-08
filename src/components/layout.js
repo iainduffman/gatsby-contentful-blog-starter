@@ -15,7 +15,8 @@ import "./layout.css"
 import "./ui-custom.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
+  
+  const datax = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -27,7 +28,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={datax.site.siteMetadata.title} />
       <Helmet>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>

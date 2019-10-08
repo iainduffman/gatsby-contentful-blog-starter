@@ -1,21 +1,42 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
+const Header = () => {
+
+  const data = useStaticQuery(graphql`
+  query LogoQ {
+    site {
+      siteMetadata {
+        description
+      }
+    }
+    contentfulAsset(title: {eq: "Logo"}) {
+      title
+      file {
+        url
+      }
+    }
+  } 
+`)
+
+return (
+
+  <header style={{
       background: `#f8f8f8`,
       marginBottom: `1.45rem`,
     }}
   >
+
   <nav className="uk-navbar-container uk-container" data-uk-navbar>
     <div className="uk-navbar-left">
 
         <ul className="uk-navbar-nav">
-            <li className="uk-active"><Link to="/">Home</Link></li>
-            <li>
-                <Link to="/blogposts">Parent</Link>
+        <li><p className="uk-text-lead">{data.site.siteMetadata.description}</p></li>
+        <li><p className="uk-text-lead"><img src={`/${data.contentfulAsset.file.url}`} /></p></li>
+        <li className="uk-active"><Link to="/">Home</Link></li>
+        <li><Link to="/blogposts">Article</Link>
                 <div className="uk-navbar-dropdown">
                     <ul className="uk-nav uk-navbar-dropdown-nav">
                         <li className="uk-active"><Link to="/">Home</Link></li>
@@ -30,14 +51,6 @@ const Header = ({ siteTitle }) => (
     </div>
 </nav>
   </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
+)}
 
 export default Header
