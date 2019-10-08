@@ -8,7 +8,7 @@ const BlogPosts = ({ data }) => {
   const blogPosts = data.allContentfulBlogPost.edges;
   return (
     <Layout>
-      <SEO title="Blog posts" />
+      <SEO title="Library Items" />
       <h1>{"A list of Concepts"}</h1>
       <div class="uk-grid-match uk-grid-column-medium uk-grid-row-large uk-child-width-1-3@s uk-text-center" data-uk-grid>
         {blogPosts.map(({ node: post }) => (

@@ -5,27 +5,30 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#f8f8f8`,
       marginBottom: `1.45rem`,
     }}
   >
-    <div className="uk-container"
-      style={{
-        margin: `0 auto`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <nav className="uk-navbar-container uk-container" data-uk-navbar>
+    <div className="uk-navbar-left">
+
+        <ul className="uk-navbar-nav">
+            <li className="uk-active"><Link to="/">Home</Link></li>
+            <li>
+                <Link to="/blogposts">Parent</Link>
+                <div className="uk-navbar-dropdown">
+                    <ul className="uk-nav uk-navbar-dropdown-nav">
+                        <li className="uk-active"><Link to="/">Home</Link></li>
+                        <li><Link to="/">Item</Link></li>
+                        <li><Link to="/">Item</Link></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="/">Item</a></li>
+        </ul>
+
     </div>
+</nav>
   </header>
 )
 
