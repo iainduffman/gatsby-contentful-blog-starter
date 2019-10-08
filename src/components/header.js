@@ -25,17 +25,21 @@ const Header = () => {
 return (
 
   <header style={{
-      background: `#f8f8f8`,
+      background: `#fff`,
       marginBottom: `1.35rem`,
     }}
   >
 
   <nav className="uk-navbar-container uk-container" data-uk-navbar>
-    <div className="uk-navbar-left">
 
+    <div className="uk-navbar-left">
         <ul className="uk-navbar-nav">
-        <li><p className="uk-text-lead">{data.site.siteMetadata.description}</p></li>
-        <li><p className="uk-text-lead"><img src={`/${data.contentfulAsset.file.url}`} /></p></li>
+        <li><Link to="/"><img width="184" height="37" src={`/${data.contentfulAsset.file.url}`} /></Link></li>
+        </ul>
+    </div>
+
+    <div className="uk-navbar-right">
+        <ul className="uk-navbar-nav">
         <li className="uk-active"><Link to="/">Home</Link></li>
         <li><Link to="/blogposts">Article</Link>
                 <div className="uk-navbar-dropdown">
@@ -48,8 +52,8 @@ return (
             </li>
             <li><a href="/">Item</a></li>
         </ul>
-
     </div>
+
 </nav>
   </header>
 )}

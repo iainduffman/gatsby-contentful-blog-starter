@@ -15,7 +15,9 @@ const BlogPosts = ({ data }) => {
           <div>
           <div className="uk-card uk-card-default uk-card-body">
           <div key={post.id}>
-            <h1>{post.title}</h1>
+            <div className="cardHero" style={{backgroundImage: `url(${post.image.file.url})`, backgroundSize: `cover`,}}></div>
+            <h3>{post.title}</h3>
+            <p>{post.childContentfulBlogPostDescriptionTextNode.description}</p>
             <Link to={`/blogpost/${post.slug}`}>Read More</Link>
             </div>
           </div>
@@ -36,6 +38,9 @@ export const query = graphql`
         node {
           id
           title
+          childContentfulBlogPostDescriptionTextNode {
+            description
+          }
           slug
           body {
             body

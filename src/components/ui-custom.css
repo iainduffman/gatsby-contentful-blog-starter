@@ -6,3 +6,26 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.footer {
+    background: #323232 !important;
+}
+
+.footer-nav ul li {
+    text-align: left;
+    list-style-type: none;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #fff !important;
+}
+
+main {
+    background: #f1f1f1;
+}
+
+.cardHero {
+    width: 100%;
+    height: 128px;
+    background: #ccc;
+}
