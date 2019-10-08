@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Etihad POC Library`,
-    description: `An awesome blog displaying my awesome posts.`,
+    description: `A POC library for Etihad`,
     author: `Iain Duff`,
 },
   plugins: [
