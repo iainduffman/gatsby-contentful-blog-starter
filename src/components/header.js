@@ -12,7 +12,7 @@ const Header = () => {
         description
       }
     }
-    contentfulAsset(id: {eq: "deca7039-15b8-5353-8d50-f0b5b96a5b6f"}) {
+    contentfulAsset(title: {eq: "Logo"}) {
       title
       file {
         fileName
@@ -36,7 +36,7 @@ return (
 
         <ul className="uk-navbar-nav">
         <li><p className="uk-text-lead">{data.site.siteMetadata.description}</p></li>
-        <li><p className="uk-text-lead">{data.contentfulAsset.file.fileName}</p></li>
+        <li><p className="uk-text-lead"><img src={`/${data.contentfulAsset.file.url}`} /></p></li>
         <li className="uk-active"><Link to="/">Home</Link></li>
         <li><Link to="/blogposts">Article</Link>
                 <div className="uk-navbar-dropdown">
