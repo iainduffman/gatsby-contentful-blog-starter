@@ -1,27 +1,52 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="home">
-      <h1>Bonjour</h1>
-      <p>Latest Features...</p>
-      <div>
-        <div
-          style={{
-            maxWidth: `300px`,
-            margin: "0 auto 1.45rem"
-          }}
-        >
-          <Image />
+const BlogPosts = ({ data }) => {
+  const blogPosts = data.allContentfulBlogPost.edges;
+  return (
+    <Layout>
+      <SEO title="Blog posts" />
+      <h1>{"A list of Concepts"}</h1>
+      <div class="uk-grid-match uk-grid-column-medium uk-grid-row-large uk-child-width-1-3@s uk-text-center" data-uk-grid>
+        {blogPosts.map(({ node: post }) => (
+          <div>
+          <div className="uk-card uk-card-default uk-card-body">
+          <div key={post.id}>
+            <h1>{post.title}</h1>
+            <Link to={`/blogpost/${post.slug}`}>Read More</Link>
+            </div>
+          </div>
+          </div>
+        ))}
         </div>
-      </div>
-      <Link to="/blogposts/">View all posts</Link>
-    </div>
-  </Layout>
-);
-export default IndexPage;
+        <span className="mgBtm__24" />
+        <Link to="/">Go back to the homepage</Link>
+    </Layout>
+  );
+};
+export default BlogPosts;
+
+export const query = graphql`
+  query IndexPageQuery {
+    allContentfulBlogPost(limit: 1000) {
+      edges {
+        node {
+          id
+          title
+          slug
+          body {
+            body
+          }
+          image {
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`;

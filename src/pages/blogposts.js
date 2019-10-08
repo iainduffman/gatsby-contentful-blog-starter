@@ -21,6 +21,7 @@ const BlogPosts = ({ data }) => {
   );
 };
 export default BlogPosts;
+
 export const query = graphql`
   query BlogPostsPageQuery {
     allContentfulBlogPost(limit: 1000) {
