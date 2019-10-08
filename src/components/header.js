@@ -15,7 +15,6 @@ const Header = () => {
     contentfulAsset(id: {eq: "26dca1aa-2468-54e9-acc9-a8a16adb347d"}) {
       title
       file {
-        fileName
         url
       }
     }
@@ -41,7 +40,7 @@ return (
         <li><Link to="/blogposts">Article</Link>
                 <div className="uk-navbar-dropdown">
                     <ul className="uk-nav uk-navbar-dropdown-nav">
-                        <li className="uk-active"><Link to="/">Home</Link></li>
+                        <li className="uk-active"><Link to="/blogposts">Blog Posts</Link></li>
                         <li><Link to="/">Item</Link></li>
                         <li><Link to="/">Item</Link></li>
                     </ul>
