@@ -10,7 +10,7 @@ const BlogPosts = ({ data }) => {
     <Layout>
       <SEO title="Library Items" />
       <h1>{"A list of Concepts"}</h1>
-      <div class="uk-grid-match uk-grid-column-medium uk-grid-row-large uk-child-width-1-3@s uk-text-center" data-uk-grid>
+      <div class="uk-grid-match uk-grid-column-medium uk-grid-row-medium uk-child-width-1-3@s uk-text-center" data-uk-grid>
         {blogPosts.map(({ node: post }) => (
           <div>
           <div className="uk-card uk-card-default uk-card-body">
@@ -25,7 +25,6 @@ const BlogPosts = ({ data }) => {
         ))}
         </div>
         <span className="mgBtm__24" />
-        <Link to="/">Go back to the homepage</Link>
     </Layout>
   );
 };
