@@ -58,6 +58,19 @@ main {
 
 /* Navigation */
 
+
+#social {
+    margin-right: 8px;
+}
+
+#social li {
+    color: #2276C2 !important;
+    list-style: none;
+    float: left;
+    margin-right: 4px;
+    padding-top: 18px;
+}
+
 header {
     -webkit-box-shadow: 0px -2px 8px -1px rgba(0,0,0,0.20);
     -moz-box-shadow: 0px -2px 8px -1px rgba(0,0,0,0.20);
@@ -68,6 +81,81 @@ header {
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
     background: #fff !important;
+}
+
+.tm-navbar-container .uk-navbar-nav>li>a {
+    position: relative;
+}
+
+.primary-nav li {
+    border-right: 1px solid #efefef;
+    position: relative;
+    top: 0px;
+    height: 72px;
+}
+
+.uk-navbar-nav>li>a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 15px;
+    right: calc(102% - 15px);
+    bottom: 12px;
+    height: 2px;
+    top: 56px;
+    background-color: #FF8800 !important;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transition-property: right;
+    transition-property: right;
+}
+
+.uk-navbar-nav>li>a, .uk-navbar-item, .uk-navbar-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding: 0 15px;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+.uk-navbar-nav>li>a {
+    color: #666;
+    text-transform: uppercase;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color;
+}
+
+.uk-navbar-nav>li>a {
+    min-height: 56px;
+    text-transform: none;
+    font-size: 16px;
+    color: #fff !important;
+    height: 56px !important;
+}
+
+.uk-navbar-nav li a {
+    color: #000 !important;
+    position: relative;
+    top: -6px;
+    font-size: 1em !important;
+    text-transform: capitalize !important;
+}
+
+.uk-navbar-container .uk-navbar-nav>li>a {
+    position: relative;
+}
+
+.uk-navbar-container .uk-navbar-nav>li>a {
+    position: relative;
+}
+
+
+.uk-navbar-right .uk-navbar-nav>li>a:hover::before, .uk-navbar-left .uk-navbar-nav>li>a:hover::before {
+    right: 15px;
 }
 
 /* UI Controls: Buttons */

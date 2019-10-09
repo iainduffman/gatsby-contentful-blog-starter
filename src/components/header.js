@@ -30,30 +30,38 @@ return (
   >
 
   <nav className="uk-container" data-uk-navbar>
-    <div className="uk-navbar-left">
-        <ul className="uk-navbar-nav">
-        <li><Link to="/"><img id="logo" width="184" height="37" src={`/${data.contentfulAsset.file.url}`} /></Link></li>
-        </ul>
+
+  <div className="uk-navbar-left" style={{marginLeft: 120,}}>
+  <Link to="/"><img id="logo" width="184" height="37" src={`/${data.contentfulAsset.file.url}`} /></Link>
+    <ul className="uk-navbar-nav primary-nav">
+	  <li><Link to="/">Offers</Link></li>
+	  <li><Link to="/">Discounts</Link></li>
+	  <li><Link to="/">Our Features</Link></li>
+    <li><Link to="/">Features</Link></li>
+    </ul>
     </div>
 
     <div className="uk-navbar-right">
-        <ul className="uk-navbar-nav">
-        <li className="uk-active"><Link to="/">Home</Link></li>
-        <li><Link to="/blogposts">Article</Link>
-                <div className="uk-navbar-dropdown">
-                    <ul className="uk-nav uk-navbar-dropdown-nav">
-                        <li className="uk-active"><Link to="/blogposts">Blog Posts</Link></li>
-                        <li><Link to="/">Item</Link></li>
-                        <li><Link to="/">Item</Link></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="/">Item</a></li>
-        </ul>
+    <ul id="social">
+    <li><a href="#"><span uk-icon="icon: twitter; ratio: 1.5"></span></a></li>
+    <li><a href="#"><span uk-icon="icon: facebook; ratio: 1.5"></span></a></li>
+    <li><a href="#"><span uk-icon="icon: youtube; ratio: 1.5"></span></a></li>
+    </ul>
+	  <button className="uk-button uk-button-primary uk-button-large">Join</button>
     </div>
 
+
+    {/* Right Hand Nav Menu - Hidden */}
+    {/* <div className="uk-navbar-right">
+    <ul className="uk-navbar-nav primary-nav">
+	  <li><a href="http://dev.eurorescue.co.uk/why-choose-us/">Why Choose Euro Rescue?</a></li>
+	  <li><a href="http://dev.eurorescue.co.uk/compare-breakdown-services/">Breakdown Cover</a></li>
+	  <li><a href="http://dev.eurorescue.co.uk/contact/">Contact</a></li>
+    </ul>
+    </div> */}
+
 </nav>
-  </header>
+</header>
 )}
 
 export default Header
