@@ -17,7 +17,7 @@ const BlogPosts = ({ data }) => {
       {/* ------------------------- Hero ------------------------- */}
       <Hero imageURL="http://dev.eurorescue.co.uk/wp-content/uploads/2019/10/heroHomepage-1.jpg" />
       
-      {/* ------------------------- Homepage Tabs ------------------------- */}
+      {/* ------------------------- Homepage Deal Tabs ------------------------- */}
       <div className="dealContainer uk-container uk-padding-large uk-padding-remove-bottom uk-padding-remove-left uk-padding-remove-right uk-padding-remove-top">
       <ul className="tabs uk-child-width-expand" data-uk-tab>
         <li className="uk-active"><a href="#">Latest Offers</a></li>
@@ -35,7 +35,6 @@ const BlogPosts = ({ data }) => {
             <h3>{post.title}</h3>
             <p>{post.childContentfulBlogPostDescriptionTextNode.description}</p>
             <a target="_blank" href={post.link}>Redeem Offer</a>
-            {/* <Link to={`/blogpost/${post.slug}`}>Read More</Link> */}
             </div>
             </div>
           </div>
@@ -50,7 +49,6 @@ const BlogPosts = ({ data }) => {
     
     {/* ------------------------- Mobile Access Promo ------------------------- */}
     <MobilePromo PromoHeading="The Best Bit?" PromoSubHeading="Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue." />
-
 
     </Layout>
   );
