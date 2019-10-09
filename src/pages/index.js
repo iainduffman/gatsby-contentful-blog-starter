@@ -9,7 +9,7 @@ const BlogPosts = ({ data }) => {
   const blogPosts = data.allContentfulBlogPost.edges;
   return (
     <Layout>
-      <SEO title="Library Items" />
+      <SEO title="Home" />
 {/* 
       <div className="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style={{backgroundImage: `url(http://dev.eurorescue.co.uk/wp-content/uploads/2019/04/AdobeStock_168162190-1-e1554371498170.jpg)`,}}>
       <p class="uk-h4">Cover</p>
