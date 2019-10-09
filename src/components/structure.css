@@ -42,7 +42,7 @@ main {
 
 .uk-container.heroContent.uk-text-center {
     position: relative;
-    top: -80px;
+    top: -48px;
 }
 
 .heroContent h1 {
@@ -183,6 +183,22 @@ header {
     font-weight: 700 !important;
 }
 
+/* UI Controls: Stepper */
+
+#process button.uk-button.uk-button-primary.uk-button-large {
+    position: absolute;
+    left: 472px;
+}
+
+div#process {
+    margin-top: -32px;
+}
+
+#process .cardHero {
+    background: #fff;
+    height: 128px;
+}
+
 /* UI Controls: Tabs */
 
 .tabs {
@@ -197,9 +213,10 @@ header {
 }
 
 .tabs li a {
-    height: 40px;
-    padding-top: 24px;
+    height: 32px;
+    padding-top: 16px;
     font-size: 1em;
+    padding-bottom: 6px;
     text-transform: capitalize;
 }
 
@@ -215,11 +232,45 @@ header {
     background: #f5f5f57a !important;
 }
 
+/* Bespoke Headings */
+
+.massiveHeading {
+    font-weight: 600 !important;
+    color: #2276C2;
+    font-size: 4.5em !important;
+    line-height: 1 !important;
+}
+
+.massiveSubHeading {
+    font-weight: 400 !important;
+    color: #000;
+    font-size: 2em !important;
+    margin-top: 0px !important;
+    line-height: 1 !important;
+}
+
+
+/* Sections */
+
+.blueSection {
+    height: 512px;
+    width: 100%;
+    background-color: #2276C2;
+}
+
+
+.transparentSection {
+    height: 256px;
+    width: 100%;
+    background: none;
+}
+
+
 /* Deal Wrapper */
 
 .dealContainer {
     position: relative;
-    top: -73px;
+    top: -56px;
     border-radius: 2px;
     background-color: #fff;
 }

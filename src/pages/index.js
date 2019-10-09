@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
+import Process from "../components/process";
 import Image from "../components/image";
 import SEO from "../components/seo";
 
@@ -34,7 +35,7 @@ const BlogPosts = ({ data }) => {
             </div>
         </div>
       
-      <div className="dealContainer uk-container uk-padding-large uk-padding-remove-left uk-padding-remove-right uk-padding-remove-top">
+      <div className="dealContainer uk-container uk-padding-large uk-padding-remove-bottom uk-padding-remove-left uk-padding-remove-right uk-padding-remove-top">
       <ul className="tabs uk-child-width-expand" data-uk-tab>
         <li className="uk-active"><a href="#">Latest Offers</a></li>
         <li><a href="#">Why Join?</a></li>
@@ -60,6 +61,9 @@ const BlogPosts = ({ data }) => {
         </div>
         </div>
         </div>
+    
+    {/* Process Content Component */}
+    <Process ProcessHeading="Join The Club Today" ProcessSubHeading="Club RCIB is so easy to use - get started in 3 easy steps!" />
     </Layout>
   );
 };
