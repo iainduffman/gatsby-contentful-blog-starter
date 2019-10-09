@@ -63,6 +63,10 @@ main {
     margin-right: 8px;
 }
 
+#social svg {
+    fill: #2276C2;
+}
+
 #social li {
     color: #2276C2 !important;
     list-style: none;
