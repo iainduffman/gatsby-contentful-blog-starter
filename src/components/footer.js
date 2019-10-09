@@ -10,15 +10,15 @@ export default () => (
 <div className="footer uk-section uk-section-primary tm-section-primary uk-section-xlarge uk-padding-remove-bottom uk-padding-remove-top" styles="background: #323232;">
     <div className="uk-container uk-text-center">
         <div className="uk-margin-top uk-margin-bottom">
-            <div data-uk-grid="" className="uk-child-width-auto@m uk-flex-middle uk-grid uk-grid-stack">
+            <div className="uk-child-width-auto@m uk-flex-middle uk-grid uk-grid-stack">
                 <div className="uk-first-column uk-hidden">
                     <ul className="uk-navbar-nav uk-navbar-nav footer-left uk-visible@l">
                         <li><a className="uk-text-bold" href="#"><span className="uk-margin-small-right uk-icon" data-uk-icon="receiver" styles="color: #fff;"></span><p>Call Us 0330 123 5961</p> <span></span></a></li>
                     </ul>
                 </div>
                 <div className="uk-flex-1 uk-margin-auto uk-visible@m uk-first-column">
-                    <div data-uk-margin="" className="uk-flex-around uk-flex-center uk-margin-top uk-subnav footer-nav">
-                        <ul className="uk-first-column">
+                    <div className="uk-flex-around uk-flex-center uk-margin-top uk-subnav footer-nav">
+                        <ul>
                         <li><h4>Products</h4>
                         </li><li><a href="http://dev.eurorescue.co.uk/compare-breakdown-services">Eurorescue Breakdown Cover</a></li>
                         <li><a href="http://dev.eurorescue.co.uk/uk-breakdown-cover">UK Breakdown Cover</a></li>
