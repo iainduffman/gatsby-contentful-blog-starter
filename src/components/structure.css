@@ -246,14 +246,21 @@ div#process {
     color: #000;
     font-size: 2em !important;
     margin-top: 0px !important;
-    line-height: 1 !important;
+    line-height: 1.1em !important;
 }
 
 
 /* Sections */
 
+.phone {
+    background-image: url(../images/iPhone.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center top;
+}
+
 .blueSection {
-    height: 512px;
+    height: auto;
     width: 100%;
     background-color: #2276C2;
 }

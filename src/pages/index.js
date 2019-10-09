@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Process from "../components/process";
 import Hero from "../components/hero";
+import MobilePromo from "../components/mobilePromo";
 import Image from "../components/image";
 import SEO from "../components/seo";
 
@@ -46,6 +47,11 @@ const BlogPosts = ({ data }) => {
 
     {/* ------------------------- Process Content Component ------------------------- */}
     <Process ProcessHeading="Join The Club Today" ProcessSubHeading="Club RCIB is so easy to use - get started in 3 easy steps!" />
+    
+    {/* ------------------------- Mobile Access Promo ------------------------- */}
+    <MobilePromo PromoHeading="The Best Bit?" PromoSubHeading="Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue." />
+
+
     </Layout>
   );
 };
