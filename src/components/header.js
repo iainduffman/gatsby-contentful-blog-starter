@@ -43,9 +43,9 @@ return (
 
     <div className="uk-navbar-right">
     <ul id="social">
-    <li><a href="#"><span uk-icon="icon: twitter; ratio: 1.5"></span></a></li>
-    <li><a href="#"><span uk-icon="icon: facebook; ratio: 1.5"></span></a></li>
-    <li><a href="#"><span uk-icon="icon: youtube; ratio: 1.5"></span></a></li>
+    <li><a href="#"><span data-uk-icon="icon: twitter; ratio: 1.5"></span></a></li>
+    <li><a href="#"><span data-uk-icon="icon: facebook; ratio: 1.5"></span></a></li>
+    <li><a href="#"><span data-uk-icon="icon: youtube; ratio: 1.5"></span></a></li>
     </ul>
 	  <button className="uk-button uk-button-primary uk-button-large">Join</button>
     </div>
