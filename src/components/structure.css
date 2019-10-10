@@ -185,6 +185,39 @@ header {
 
 /* UI Controls: Stepper */
 
+
+.stepOne_Login {
+    background-image: url(../images/_iconLogin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 62px;
+    margin: auto;
+}
+
+.stepTwo_Login {
+    background-image: url(../images/_iconSelectOffer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 62px;
+    margin: auto;
+}
+
+.stepThree_Login {
+    background-image: url(../images/_iconRedeem.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 62px;
+    margin: auto;
+}
+
+
+#process .uk-card {
+    border-right: 1px solid #ccc6;
+}
+
 #process button.uk-button.uk-button-primary.uk-button-large {
     position: absolute;
     left: 472px;

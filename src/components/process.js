@@ -17,18 +17,13 @@ export default props => (
 <div className="uk-container">
 
 <div id="process" className="dealContainer uk-container uk-padding-large uk-padding-remove-bottom uk-padding-remove-left uk-padding-remove-right uk-padding-remove-top">
-<ul className="tabs uk-child-width-expand" data-uk-tab>
-<li><a href="#">Step 1</a></li>
-<li><a href="#">Step 2</a></li>
-<li><a href="#">Step 3</a></li>
-</ul>
 <div className="dealWrapper">
 <div className="uk-grid-match uk-grid-column-medium uk-grid-row-medium uk-child-width-1-3@s uk-text-center" data-uk-grid>
 <div>
 <div className="uk-card">
-<div className="cardHero"></div>
 <div className="cardContents">
-<h3>Login</h3>
+<div className="stepOne_Login"></div>
+<h3>1. Login</h3>
 <p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</p>
 </div>
 </div>
@@ -36,19 +31,19 @@ export default props => (
 
 <div>
 <div className="uk-card">
-<div className="cardHero"></div>
 <div className="cardContents">
-<h3>Select Offer</h3>
+<div className="stepTwo_Login"></div>
+<h3>2. Select Offer</h3>
 <p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</p>
 </div>
 </div>
 </div>
 
 <div>
-<div className="uk-card">
-<div className="cardHero"></div>
+<div className="uk-card" style={{borderRight: '0px',}}>
 <div className="cardContents">
-<h3>Reedeem</h3>
+<div className="stepThree_Login"></div>
+<h3>3. Reedeem</h3>
 <p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</p>
 </div>
 </div>

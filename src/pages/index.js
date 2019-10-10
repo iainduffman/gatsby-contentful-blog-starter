@@ -45,6 +45,8 @@ const BlogPosts = ({ data }) => {
         </div>
 
     {/* ------------------------- Process Content Component ------------------------- */}
+
+    <Hero imageURL="http://dev.eurorescue.co.uk/wp-content/uploads/2019/04/AdobeStock_168162190.jpg" />
     <Process ProcessHeading="Join The Club Today" ProcessSubHeading="Club RCIB is so easy to use - get started in 3 easy steps!" />
     
     {/* ------------------------- Mobile Access Promo ------------------------- */}
