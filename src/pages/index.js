@@ -45,7 +45,7 @@ const BlogPosts = ({ data }) => {
         </div>
 
     {/* ------------------------- Process Content Component ------------------------- */}
-    <Process ProcessHeading="Join The Club Today" ProcessSubHeading="Club RCIB is so easy to use - get started in 3 easy steps!" />
+    <Process ProcessHeading="Join the club!" ProcessSubHeading="Club RCIB is so easy to use - get started in 3 easy steps!" />
     
     {/* ------------------------- Mobile Access Promo ------------------------- */}
     <MobilePromo PromoHeading="The Best Bit?" PromoSubHeading="Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue." />
