@@ -29,13 +29,14 @@ const BlogPosts = ({ data }) => {
         {blogPosts.map(({ node: post }) => (
           <div>
           <div className="uk-card uk-card-default uk-card-body">
+          <span class="uk-badge">{post.offerType} Offer</span>
           <div key={post.id}>
             <div className="cardHero" style={{backgroundImage: `url(${post.image.file.url})`, backgroundSize: `cover`,}}></div>
             <div className="cardContents">
-            <h3>{post.title}</h3>
-            <p>{post.productName}</p>
-            <p>{post.offerType}</p>
-            <a target="_blank" href={post.link}>Redeem Offer</a>
+            <h3>{post.productName}</h3>
+            <p>{post.title}</p>
+            
+            <a target="_blank" href={post.link}><button class="uk-button uk-button-primary uk-button-large">Redeem Offer</button></a>
             </div>
             </div>
           </div>
