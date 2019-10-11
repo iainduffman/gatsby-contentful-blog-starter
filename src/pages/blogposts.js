@@ -30,9 +30,8 @@ export const query = graphql`
           id
           title
           slug
-          body {
-            body
-          }
+          offerType
+          productName
           image {
             file {
               url

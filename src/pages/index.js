@@ -33,7 +33,8 @@ const BlogPosts = ({ data }) => {
             <div className="cardHero" style={{backgroundImage: `url(${post.image.file.url})`, backgroundSize: `cover`,}}></div>
             <div className="cardContents">
             <h3>{post.title}</h3>
-            <p>{post.childContentfulBlogPostDescriptionTextNode.description}</p>
+            <p>{post.productName}</p>
+            <p>{post.offerType}</p>
             <a target="_blank" href={post.link}>Redeem Offer</a>
             </div>
             </div>
@@ -64,14 +65,10 @@ export const query = graphql`
         node {
           id
           title
-          childContentfulBlogPostDescriptionTextNode {
-            description
-          }
+          offerType
+          productName
           slug
           link
-          body {
-            body
-          }
           image {
             file {
               url
