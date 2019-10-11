@@ -15,11 +15,6 @@ module.exports = {
             variants: [`400`, `700`]
           },
           {
-            family: `Mansalva`,
-            variants: [`400`],
-            subsets: [`latin`]
-          },
-          {
             family: `Quicksand`,
             variants: [`300`,`400`,`500`],
             subsets: [`latin`]
