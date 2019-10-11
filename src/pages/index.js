@@ -36,7 +36,7 @@ const BlogPosts = ({ data }) => {
             <h3>{post.productName}</h3>
             <p>{post.title}</p>
             
-            <a target="_blank" href={post.link}><button class="uk-button uk-button-primary uk-button-large">Redeem Offer</button></a>
+            <a target="_blank" href={post.link}><button class="uk-button uk-button-primary uk-button-large">Redeem</button></a>
             </div>
             </div>
           </div>
