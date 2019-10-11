@@ -19,37 +19,33 @@ export default () => (
                 <div className="uk-flex-1 uk-margin-auto uk-visible@m uk-first-column">
                     <div className="uk-flex-around uk-flex-center uk-margin-top uk-subnav footer-nav">
                         <ul>
-                        <li><h4>Products</h4>
-                        </li><li><a href="http://dev.eurorescue.co.uk/compare-breakdown-services">Eurorescue Breakdown Cover</a></li>
-                        <li><a href="http://dev.eurorescue.co.uk/uk-breakdown-cover">UK Breakdown Cover</a></li>
+                        <li><h4>Site Nav Title</h4></li>
+                        <li><a href="#">Link Title</a></li>
+                        <li><a href="#">Link Title</a></li>
                         </ul>
 
                         <ul>
-                        <li><h4>About</h4>
-                        </li><li><a href="http://dev.eurorescue.co.uk/why-choose-us">Why Choose Us?</a></li>
-                        <li><a href="http://dev.eurorescue.co.uk/document-downloads">Document Downloads</a></li>
-                        <li><a href="http://dev.eurorescue.co.uk/faq">FAQ's</a></li>
-                        <li><a href="http://dev.eurorescue.co.uk/contact">Contact</a></li>
+                        <li><h4>Site Nav Title</h4></li>
+                        <li><a href="#">Link Title</a></li>
+                        <li><a href="#">Link Title</a></li>
                         </ul>
 
                         <ul>
-                        <li><h4>Members</h4>
-                        </li><li><a href="https://eurorescue.co.uk/ChangeYourDetails.aspx">Change Details</a></li>
-                        <li><a href="https://eurorescue.co.uk/ChangeVehicle.aspx">Change Vehicle</a></li>
+                        <li><h4>Site Nav Title</h4></li>
+                        <li><a href="#">Link Title</a></li>
+                        <li><a href="#">Link Title</a></li>
                         </ul>
 
                         <ul>
-                        <li><h4>Legal</h4>
-                        </li><li><a href="http://dev.eurorescue.co.uk/terms-conditions">Terms &amp; Conditions</a></li>
-                        <li><a href="http://dev.eurorescue.co.uk/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="http://dev.eurorescue.co.uk/cookie-policy">Cookie Policy</a></li>
+                        <li><h4>Site Nav Title</h4></li>
+                        <li><a href="#">Link Title</a></li>
+                        <li><a href="#">Link Title</a></li>
                         </ul>
 
                         <ul>
-                        <li><h4>Legal</h4>
-                        </li><li><a href="http://dev.eurorescue.co.uk/terms-conditions">Terms &amp; Conditions</a></li>
-                        <li><a href="http://dev.eurorescue.co.uk/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="http://dev.eurorescue.co.uk/cookie-policy">Cookie Policy</a></li>
+                        <li><h4>Site Nav Title</h4></li>
+                        <li><a href="#">Link Title</a></li>
+                        <li><a href="#">Link Title</a></li>
                         </ul>
 
                     </div>

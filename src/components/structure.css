@@ -58,6 +58,9 @@ main {
 
 /* Navigation */
 
+.uk-navbar-nav li a:hover {
+    background: #00000008;
+}
 
 #social {
     margin-right: 8px;
@@ -163,6 +166,19 @@ header {
 }
 
 /* UI Controls: Buttons */
+
+button.uk-button.uk-button-primary.uk-button-large {
+    transition-property: background-color 2s ease-out;
+}
+
+
+button.uk-button.uk-button-primary.uk-button-large:hover {
+    background: #2276C2;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+ 
+}
+
 
 .uk-button {
     margin: 4px !important;

@@ -47,7 +47,7 @@ const BlogPosts = ({ data }) => {
     {/* ------------------------- Process Content Component ------------------------- */}
 
     <Hero imageURL="http://dev.eurorescue.co.uk/wp-content/uploads/2019/04/AdobeStock_168162190.jpg" />
-    <Process ProcessHeading="Join The Club Today" ProcessSubHeading="Club RCIB is so easy to use - get started in 3 easy steps!" />
+    <Process ProcessHeading="Not a member yet?" ProcessSubHeading="Join today! Club RCIB is so easy to use - get started in just 3 steps" />
     
     {/* ------------------------- Mobile Access Promo ------------------------- */}
     <MobilePromo PromoHeading="The Best Bit?" PromoSubHeading="Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue." />
