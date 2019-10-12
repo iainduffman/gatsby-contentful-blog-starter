@@ -29,13 +29,13 @@ const BlogPosts = ({ data }) => {
         {blogPosts.map(({ node: post }) => (
           <div>
           <div className="uk-card uk-card-default uk-card-body">
-          <span class="uk-badge">{post.offerType} Offer</span>
           <div key={post.id}>
-            <div className="cardHero" style={{backgroundImage: `url(${post.image.file.url})`, backgroundSize: `cover`,}}></div>
-            <div className="cardContents">
+            <div className="cardHero" style={{backgroundImage: `url(${post.heroImage.file.url})`, backgroundSize: `cover`,}}></div>
+            <div className="cardContents uk-padding-remove-top">
+            <img className="productImage" src={post.image.file.url} />
             <h3>{post.productName}</h3>
+            <span class="uk-badge">{post.offerType} Offer</span>
             <p>{post.title}</p>
-            
             <a target="_blank" href={post.link}><button class="uk-button uk-button-primary uk-button-large">Redeem</button></a>
             </div>
             </div>
@@ -70,6 +70,11 @@ export const query = graphql`
           productName
           slug
           link
+          heroImage {
+            file {
+              url
+            }
+          }
           image {
             file {
               url

@@ -32,6 +32,16 @@ main {
 
 /* Hero */
 
+.cardContents h3 {
+    margin-top: 0px;
+}
+
+img.productImage {
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+}
+
 .uk-cover-container {
     height: 512px;
 }
