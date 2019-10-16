@@ -32,7 +32,7 @@ main {
 
 /* Hero */
 
-.h3 {}
+h3, h2  {}
 
 .cardContents h3 {
     margin-top: 0px;
