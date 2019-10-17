@@ -36,7 +36,7 @@ return (
     <ul className="uk-navbar-nav primary-nav">
 	  <li><Link to="/">Menu Link</Link></li>
 	  <li><Link to="/">Menu Link</Link></li>
-	  <li><Link to="/">Menu Link</Link></li>
+	  <li><Link to="/">User Test</Link></li>
     <li><Link to="/">Side Branch</Link></li>
     </ul>
     </div>
