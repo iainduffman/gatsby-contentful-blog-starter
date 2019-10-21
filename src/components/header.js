@@ -34,11 +34,11 @@ return (
   <div className="uk-navbar-left" style={{marginLeft: 120,}}>
   <Link to="/"><img id="logo" width="184" height="37" src={`/${data.contentfulAsset.file.url}`} /></Link>
     <ul className="uk-navbar-nav primary-nav">
-	  <li><Link to="/">Menu Link</Link></li>
-	  <li><Link to="/">Menu Link</Link></li>
-	  <li><Link to="/">Menu Link</Link></li>
-    <li><Link to="/">Menu Link</Link></li>
-    <li><Link to="/">Menu Link Newwwwww 44</Link></li>
+	  <li><Link to="/">Link Item</Link></li>
+	  <li><Link to="/">Link Item</Link></li>
+	  <li><Link to="/">Link Item</Link></li>
+    <li><Link to="/">Link Item</Link></li>
+    <li><Link to="/">Link Item</Link></li>
     </ul>
     </div>
 
