@@ -38,7 +38,7 @@ return (
 	  <li><Link to="/">Menu Link</Link></li>
 	  <li><Link to="/">Menu Link</Link></li>
     <li><Link to="/">Menu Link</Link></li>
-    <li><Link to="/">Menu Link New</Link></li>
+    <li><Link to="/">Menu Link New New</Link></li>
     </ul>
     </div>
 
